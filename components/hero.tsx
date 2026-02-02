@@ -318,7 +318,8 @@ export default function Hero() {
                 className="absolute inset-0 rounded-full"
                 style={{
                   background: 'linear-gradient(45deg, #7c3aed, #db2777, #0891b2)',
-                  padding: '4px'
+                  padding: '4px',
+                  backgroundSize: '200% 200%'
                 }}
                 animate={{
                   backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
@@ -327,9 +328,6 @@ export default function Hero() {
                   duration: 3,
                   repeat: Infinity,
                   ease: "linear"
-                }}
-                style={{
-                  backgroundSize: '200% 200%'
                 }}
               >
                 <div className="w-full h-full rounded-full bg-zinc-100 dark:bg-zinc-900 p-1">
