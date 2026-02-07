@@ -42,11 +42,11 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "AI Landing Page Builder",
-    description: "Next.js landing page generator powered by AI, enabling non-technical users to create professional sites in minutes.",
-    tech: ["Next.js", "TypeScript", "Tailwind", "Claude API"],
-    demo: "https://landing.revinobakmaldi.com",
-    github: "https://github.com/revinobakmaldi/ai-landing-builder"
+    title: "Auto EDA",
+    description: "Web tool for instant exploratory data analysis — upload a CSV and get comprehensive stats, distributions, correlations, and missing value analysis.",
+    tech: ["Next.js", "Python", "Pandas", "Recharts"],
+    demo: "https://auto-eda-revinobakmaldi.vercel.app",
+    github: "https://github.com/revinobakmaldi/auto-eda"
   },
   {
     id: 6,
