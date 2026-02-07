@@ -35,10 +35,10 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Customer Churn Prediction API",
-    description: "REST API serving churn predictions with 92% accuracy, enabling proactive retention campaigns for 50K+ customers.",
-    tech: ["Python", "XGBoost", "FastAPI", "PostgreSQL"],
-    github: "https://github.com/revinobakmaldi/churn-prediction-api"
+    title: "IronNotes",
+    description: "iOS gym workout tracker with smart set logging, automatic PR detection, 1RM progression charts, and a background rest timer with push notifications.",
+    tech: ["SwiftUI", "SwiftData", "Charts", "iOS"],
+    github: "https://github.com/revinobakmaldi/iron-notes"
   },
   {
     id: 5,
