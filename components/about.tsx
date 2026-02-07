@@ -179,7 +179,7 @@ export default function About() {
                   </h3>
 
                   <div className="space-y-4 text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                    <p className="text-lg">
+                    <p>
                       I get excited about turning messy, scattered data into something that actually
                       drives decisions. My approach is simple — understand the business problem first,
                       then build the simplest solution that works.
