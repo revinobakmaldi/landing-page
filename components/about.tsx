@@ -180,18 +180,21 @@ export default function About() {
 
                   <div className="space-y-4 text-zinc-700 dark:text-zinc-300 leading-relaxed">
                     <p className="text-lg">
-                      {personalInfo.bio}
+                      I get excited about turning messy, scattered data into something that actually
+                      drives decisions. My approach is simple — understand the business problem first,
+                      then build the simplest solution that works.
                     </p>
 
                     <p>
-                      With a background in enterprise analytics and an engineering degree from ITS Surabaya,
-                      I bring a systems-thinking approach to every project. I've built data platforms serving
-                      hundreds of stakeholders across supply chain, manufacturing, and commercial functions.
+                      Across FMCG, QSR, and Poultry industries, I've built enterprise analytics
+                      platforms serving hundreds of stakeholders — from demand forecasting models
+                      to integrated decision-support systems spanning supply chain, manufacturing,
+                      and commercial functions.
                     </p>
 
                     <p>
-                      Now I'm channeling that experience into building digital data products — templates,
-                      tools, and courses that make data accessible to everyone.
+                      Now I'm channeling that experience into building digital data products —
+                      templates, tools, and courses that help others do the same.
                     </p>
                   </div>
 
