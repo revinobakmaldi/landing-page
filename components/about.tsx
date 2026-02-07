@@ -270,11 +270,6 @@ export default function About() {
                     <motion.div
                       key={skill}
                       variants={skillPillVariants}
-                      whileHover={{
-                        scale: 1.05,
-                        transition: { duration: 0.2 }
-                      }}
-                      whileTap={{ scale: 0.95 }}
                       className={`
                         ${skillColors[index % skillColors.length]}
                         px-5 py-3 rounded-full text-white font-semibold shadow-lg
