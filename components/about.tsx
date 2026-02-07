@@ -272,7 +272,6 @@ export default function About() {
                       variants={skillPillVariants}
                       whileHover={{
                         scale: 1.05,
-                        rotate: [0, -2, 2, 0],
                         transition: { duration: 0.2 }
                       }}
                       whileTap={{ scale: 0.95 }}
