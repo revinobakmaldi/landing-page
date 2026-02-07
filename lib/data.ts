@@ -28,10 +28,10 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Production Line Optimization",
-    description: "Real-time anomaly detection system for manufacturing lines, reducing downtime by 25% through predictive maintenance alerts.",
-    tech: ["Python", "Scikit-learn", "Kafka", "Grafana"],
-    github: "https://github.com/revinobakmaldi/production-optimization"
+    title: "Claude Limit Reset Scheduler",
+    description: "Automated notification system that alerts you when your Claude session limit resets. Runs as a macOS background service with iPhone push notifications via ntfy.",
+    tech: ["Python", "macOS launchd", "GitHub Actions", "ntfy"],
+    github: "https://github.com/revinobakmaldi/claude-limit-notif-scheduler"
   },
   {
     id: 4,
