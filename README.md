@@ -1,4 +1,4 @@
-# revinobakmaldi.com
+# revinobakmaldi.vercel.app
 
 Personal portfolio and landing page for Revino B Akmaldi — Data Science & Analytics Manager and AI Product Builder.
 
