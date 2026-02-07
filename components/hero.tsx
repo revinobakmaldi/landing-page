@@ -35,7 +35,8 @@ export default function Hero() {
     personalInfo.tagline,
     'Data & AI Product Builder',
     'From insights to impact',
-    'Building data-driven solutions'
+    'Building data-driven solutions',
+    'From data pipelines to iOS apps'
   ];
 
   useEffect(() => {

@@ -3,7 +3,7 @@ import { PersonalInfo, Project, BlogPost, DigitalProduct } from "@/types";
 export const personalInfo: PersonalInfo = {
   name: "Revino B Akmaldi",
   tagline: "Turning data into digital products",
-  bio: "I turn complex data into products people actually use. With 7+ years in analytics and data science, I build dashboards, AI-powered tools, and digital solutions that make data accessible to everyone.",
+  bio: "I turn complex data into products people actually use. With 7+ years in analytics and data science, I build dashboards, AI-powered tools, iOS apps, and digital solutions that make data accessible to everyone.",
   avatar: "/avatar.jpg",
   socials: {
     github: "https://github.com/revinobakmaldi",
@@ -87,7 +87,8 @@ export const blogPosts: BlogPost[] = [
 
 export const skills = [
   "Data Analytics", "Machine Learning", "AI Products", "Python",
-  "SQL", "Power BI", "Microsoft Fabric", "Web Development"
+  "SQL", "Power BI", "Microsoft Fabric", "Web Development",
+  "iOS Development", "SwiftUI"
 ];
 
 export const digitalProducts: DigitalProduct[] = [

@@ -135,7 +135,7 @@ export default function Projects() {
             </h2>
 
             <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              Data science, analytics, and AI projects — from demand forecasting to production-grade ML APIs
+              Data science, analytics, AI, and iOS projects — from demand forecasting to native mobile apps
             </p>
           </motion.div>
 

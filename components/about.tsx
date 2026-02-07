@@ -145,7 +145,7 @@ export default function About() {
             </h2>
 
             <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              Data professional turned product builder — bridging analytics, AI, and modern web technologies
+              Data professional turned product builder — bridging analytics, AI, and modern web & mobile technologies
             </p>
           </motion.div>
 
@@ -193,8 +193,8 @@ export default function About() {
                     </p>
 
                     <p>
-                      Now I'm channeling that experience into building digital data products —
-                      templates, tools, and courses that help others do the same.
+                      Now I'm channeling that experience into building digital products —
+                      iOS apps, templates, tools, and courses that help others do the same.
                     </p>
                   </div>
 
