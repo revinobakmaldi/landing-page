@@ -148,10 +148,6 @@ export default function Projects() {
               <motion.div
                 key={project.id}
                 variants={cardVariants}
-                whileHover={{
-                  y: -8,
-                  transition: { duration: 0.3 }
-                }}
                 className="group relative"
               >
                 {/* Glow effect on hover */}
