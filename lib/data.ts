@@ -60,11 +60,12 @@ export const projects: Project[] = [
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: "From BI Reports to Data Products: A Practical Guide",
-    excerpt: "How to evolve traditional dashboards into self-service data products that scale across the organization.",
-    date: "2024-12-20",
-    slug: "bi-to-data-products",
-    readTime: "8 min read"
+    title: "Unveiling the Future: Data-Driven Technology Trends Shaping Tomorrow",
+    excerpt: "Exploring five pivotal data-centric technology trends — from big data analytics and IoT to edge computing, data privacy, and AI-powered personalization.",
+    date: "2023-07-26",
+    slug: "data-driven-technology-trends",
+    readTime: "6 min read",
+    url: "https://www.linkedin.com/pulse/unveiling-future-data-driven-technology-trends-revino-b-akmaldi/"
   },
   {
     id: 2,

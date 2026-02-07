@@ -242,7 +242,9 @@ export default function Blog() {
                       className="pt-4 border-t border-zinc-200 dark:border-zinc-800"
                     >
                       <Link
-                        href={`/blog/${post.slug}`}
+                        href={post.url || `/blog/${post.slug}`}
+                        target={post.url ? "_blank" : undefined}
+                        rel={post.url ? "noopener noreferrer" : undefined}
                         className="group/link flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors"
                       >
                         <span>Read More</span>

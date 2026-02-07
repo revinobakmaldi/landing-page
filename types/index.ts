@@ -30,6 +30,7 @@ export interface BlogPost {
   date: string;
   slug: string;
   readTime: string;
+  url?: string;
 }
 
 // Digital product
