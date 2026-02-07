@@ -67,7 +67,7 @@ export default function Hero() {
     e.preventDefault();
     const element = document.querySelector(href) as HTMLElement | null;
     if (element) {
-      const offsetTop = element.offsetTop - 80;
+      const offsetTop = element.offsetTop + 32;
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth',
