@@ -323,17 +323,11 @@ export default function Hero() {
                 <div className="w-full h-full rounded-full bg-zinc-100 dark:bg-zinc-900 p-1">
                   {/* Placeholder avatar - replace with actual image */}
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-zinc-200 to-zinc-300 dark:from-zinc-800 dark:to-zinc-900 flex items-center justify-center overflow-hidden">
-                    {personalInfo.avatar && personalInfo.avatar !== '/avatar.jpg' ? (
-                      <img
-                        src={personalInfo.avatar}
-                        alt={personalInfo.name}
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <div className="text-8xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">
-                        {personalInfo.name.charAt(0)}
-                      </div>
-                    )}
+                    <img
+                      src={personalInfo.avatar}
+                      alt={personalInfo.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </motion.div>
