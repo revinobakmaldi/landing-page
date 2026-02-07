@@ -193,12 +193,6 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     variants={socialButtonVariants}
-                    whileHover={{
-                      y: -8,
-                      scale: 1.02,
-                      transition: { duration: 0.3 }
-                    }}
-                    whileTap={{ scale: 0.98 }}
                     className="group relative"
                   >
                     {/* Glow effect on hover */}

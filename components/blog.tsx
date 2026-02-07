@@ -157,10 +157,6 @@ export default function Blog() {
               <motion.article
                 key={post.id}
                 variants={cardVariants}
-                whileHover={{
-                  scale: 1.02,
-                  transition: { duration: 0.3 }
-                }}
                 className="group relative"
               >
                 {/* Glow effect on hover */}
