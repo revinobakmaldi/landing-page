@@ -52,7 +52,7 @@ export default function Navigation() {
             href="#"
             className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
-            {personalInfo.name.split(' ')[0]}
+            RBA
           </a>
 
           {/* Desktop Navigation */}

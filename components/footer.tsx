@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              {personalInfo.name.split(' ')[0]}
+RBA
             </h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 max-w-xs">
               {personalInfo.tagline}
