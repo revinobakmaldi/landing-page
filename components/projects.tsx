@@ -135,7 +135,7 @@ export default function Projects() {
             </h2>
 
             <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              A collection of projects I've built, showcasing my skills in modern web development and AI integration
+              Data science, analytics, and AI projects — from demand forecasting to production-grade ML APIs
             </p>
           </motion.div>
 
@@ -274,7 +274,7 @@ export default function Projects() {
             className="text-center pt-8"
           >
             <motion.a
-              href="https://github.com/yourusername?tab=repositories"
+              href="https://github.com/revinobakmaldi?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

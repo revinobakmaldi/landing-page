@@ -144,7 +144,7 @@ export default function Blog() {
             </h2>
 
             <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              Thoughts, tutorials, and insights about web development, AI, and technology
+              Insights on data products, analytics engineering, and shipping ML to production
             </p>
           </motion.div>
 

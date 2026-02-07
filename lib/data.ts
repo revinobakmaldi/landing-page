@@ -1,74 +1,135 @@
-import { PersonalInfo, Project, BlogPost } from "@/types";
+import { PersonalInfo, Project, BlogPost, DigitalProduct } from "@/types";
 
 export const personalInfo: PersonalInfo = {
   name: "Revino B Akmaldi",
-  tagline: "Building products with AI & Code",
-  bio: "I'm a developer and creator passionate about building digital products. I leverage AI and modern web technologies to bring ideas to life.",
+  tagline: "Turning data into digital products",
+  bio: "Data Science & Analytics Manager turning enterprise insights into scalable digital products. I combine analytics expertise with modern web technologies to build tools that make data accessible to everyone.",
   avatar: "/avatar.jpg",
   socials: {
-    github: "https://github.com/yourusername",
-    twitter: "https://twitter.com/yourusername",
+    github: "https://github.com/revinobakmaldi",
     linkedin: "https://linkedin.com/in/revinobakmaldi",
-    email: "hello@example.com"
+    email: "revinobakmaldi@gmail.com"
   }
 };
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "AI Dashboard",
-    description: "A modern dashboard for visualizing AI model performance metrics with real-time updates.",
-    tech: ["Next.js", "TypeScript", "Tailwind", "Recharts"],
-    demo: "https://example.com",
-    github: "https://github.com/yourusername/ai-dashboard",
-    image: "/project-1.jpg"
+    title: "Supply Chain Demand Forecasting",
+    description: "ML-powered demand forecasting system that reduced inventory costs by 18% using time-series models and automated retraining pipelines.",
+    tech: ["Python", "Prophet", "FastAPI", "Docker"],
+    github: "https://github.com/revinobakmaldi/demand-forecasting"
   },
   {
     id: 2,
-    title: "Task Manager",
-    description: "A simple yet powerful task management app with drag-and-drop functionality.",
-    tech: ["React", "Next.js", "Prisma", "PostgreSQL"],
-    demo: "https://example.com",
-    github: "https://github.com/yourusername/task-manager"
+    title: "Executive BI Dashboard Suite",
+    description: "End-to-end Power BI dashboard suite serving 200+ stakeholders with real-time KPIs, drill-through analytics, and automated data refresh.",
+    tech: ["Power BI", "SQL Server", "DAX", "Python"]
   },
   {
     id: 3,
-    title: "Weather App",
-    description: "Beautiful weather app with location-based forecasts and animations.",
-    tech: ["Next.js", "TypeScript", "Tailwind", "Weather API"],
-    demo: "https://example.com",
-    github: "https://github.com/yourusername/weather-app"
+    title: "Production Line Optimization",
+    description: "Real-time anomaly detection system for manufacturing lines, reducing downtime by 25% through predictive maintenance alerts.",
+    tech: ["Python", "Scikit-learn", "Kafka", "Grafana"],
+    github: "https://github.com/revinobakmaldi/production-optimization"
+  },
+  {
+    id: 4,
+    title: "Customer Churn Prediction API",
+    description: "REST API serving churn predictions with 92% accuracy, enabling proactive retention campaigns for 50K+ customers.",
+    tech: ["Python", "XGBoost", "FastAPI", "PostgreSQL"],
+    github: "https://github.com/revinobakmaldi/churn-prediction-api"
+  },
+  {
+    id: 5,
+    title: "AI Landing Page Builder",
+    description: "Next.js landing page generator powered by AI, enabling non-technical users to create professional sites in minutes.",
+    tech: ["Next.js", "TypeScript", "Tailwind", "Claude API"],
+    demo: "https://landing.revinobakmaldi.com",
+    github: "https://github.com/revinobakmaldi/ai-landing-builder"
+  },
+  {
+    id: 6,
+    title: "Sales Analytics Automation Bot",
+    description: "Automated reporting bot that generates weekly sales insights, detects anomalies, and sends Slack summaries to leadership.",
+    tech: ["Python", "Pandas", "Slack API", "Airflow"],
+    github: "https://github.com/revinobakmaldi/sales-analytics-bot"
   }
 ];
 
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: "Getting Started with Next.js 16",
-    excerpt: "Learn how to build modern web applications with the latest Next.js features including App Router and Server Actions.",
-    date: "2024-01-15",
-    slug: "getting-started-nextjs-16",
-    readTime: "5 min read"
+    title: "From BI Reports to Data Products: A Practical Guide",
+    excerpt: "How to evolve traditional dashboards into self-service data products that scale across the organization.",
+    date: "2024-12-20",
+    slug: "bi-to-data-products",
+    readTime: "8 min read"
   },
   {
     id: 2,
-    title: "Building Beautiful UIs with Tailwind CSS",
-    excerpt: "Discover tips and tricks for creating stunning user interfaces using Tailwind CSS utility classes.",
-    date: "2024-01-10",
-    slug: "beautiful-ui-tailwind",
-    readTime: "4 min read"
+    title: "Getting Started with Microsoft Fabric for Analytics Engineers",
+    excerpt: "A hands-on walkthrough of Microsoft Fabric's lakehouse architecture and how it simplifies the modern data stack.",
+    date: "2024-11-15",
+    slug: "microsoft-fabric-guide",
+    readTime: "6 min read"
   },
   {
     id: 3,
-    title: "My Journey into AI-Powered Development",
-    excerpt: "How AI tools like Claude and GitHub Copilot have transformed my development workflow.",
-    date: "2024-01-05",
-    slug: "ai-powered-development",
-    readTime: "6 min read"
+    title: "Deploying ML Models in Production: Lessons Learned",
+    excerpt: "Real-world lessons from deploying machine learning models at scale — monitoring, retraining, and avoiding silent failures.",
+    date: "2024-10-05",
+    slug: "ml-in-production",
+    readTime: "7 min read"
   }
 ];
 
 export const skills = [
-  "React", "Next.js", "TypeScript", "Tailwind CSS",
-  "Node.js", "Python", "AI/ML", "Figma"
+  "Data Analytics", "Machine Learning", "AI Products", "Python",
+  "SQL", "Power BI", "Microsoft Fabric", "Web Development"
+];
+
+export const digitalProducts: DigitalProduct[] = [
+  {
+    id: 1,
+    title: "Dashboard Templates",
+    description: "Production-ready Power BI and analytics dashboard templates for common business use cases.",
+    icon: "LayoutDashboard",
+    category: "Templates",
+    comingSoon: true,
+    features: [
+      "Executive KPI dashboards",
+      "Sales & revenue analytics",
+      "Supply chain monitoring",
+      "Plug-and-play data models"
+    ]
+  },
+  {
+    id: 2,
+    title: "AI Tools & Apps",
+    description: "Lightweight AI-powered tools for data professionals — from auto-EDA to smart report generators.",
+    icon: "Bot",
+    category: "Tools",
+    comingSoon: true,
+    features: [
+      "Auto exploratory data analysis",
+      "Smart report generator",
+      "Data quality checker",
+      "Natural language to SQL"
+    ]
+  },
+  {
+    id: 3,
+    title: "Courses & Guides",
+    description: "Step-by-step courses on building data products, from analytics engineering to deploying ML APIs.",
+    icon: "GraduationCap",
+    category: "Education",
+    comingSoon: true,
+    features: [
+      "Analytics to product thinking",
+      "Power BI advanced techniques",
+      "ML deployment playbook",
+      "Data career roadmap"
+    ]
+  }
 ];

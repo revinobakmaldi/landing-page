@@ -6,7 +6,6 @@ export interface PersonalInfo {
   avatar: string;
   socials: {
     github?: string;
-    twitter?: string;
     linkedin?: string;
     email: string;
   };
@@ -31,4 +30,15 @@ export interface BlogPost {
   date: string;
   slug: string;
   readTime: string;
+}
+
+// Digital product
+export interface DigitalProduct {
+  id: number;
+  title: string;
+  description: string;
+  icon: string;
+  category: string;
+  comingSoon: boolean;
+  features: string[];
 }

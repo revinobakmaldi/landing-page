@@ -4,7 +4,7 @@ import { useInView } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import { personalInfo } from '@/lib/data';
-import { Github, Twitter, Linkedin, Mail, Copy, Check, MessageCircle } from 'lucide-react';
+import { Github, Linkedin, Mail, Copy, Check, MessageCircle } from 'lucide-react';
 
 // Animation variants
 const fadeInUp = {
@@ -67,15 +67,7 @@ export default function Contact() {
       hoverGradient: 'hover:from-primary hover:to-primary-dark',
       shadowColor: 'shadow-zinc-700/25',
     },
-    {
-      name: 'Twitter',
-      icon: Twitter,
-      href: personalInfo.socials.twitter,
-      gradient: 'from-sky-400 to-sky-600 dark:from-sky-500 dark:to-sky-700',
-      hoverGradient: 'hover:from-sky-500 hover:to-sky-700',
-      shadowColor: 'shadow-sky-500/25',
-    },
-    {
+{
       name: 'LinkedIn',
       icon: Linkedin,
       href: personalInfo.socials.linkedin,
@@ -189,7 +181,7 @@ export default function Contact() {
           {/* Social Links Grid */}
           <motion.div
             variants={staggerContainer}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto"
           >
             {socialLinks.map((social) => {
               const Icon = social.icon;

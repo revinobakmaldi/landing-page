@@ -3,18 +3,19 @@ import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import Projects from "@/components/projects";
+import Products from "@/components/products";
 import Blog from "@/components/blog";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "AI Lab - Innovative Solutions for the Future",
-  description: "Building cutting-edge AI solutions and digital products that transform businesses and drive innovation.",
-  keywords: ["AI", "Machine Learning", "Digital Products", "Innovation", "Technology"],
-  authors: [{ name: "AI Lab" }],
+  title: "Revino B Akmaldi - Data & AI Product Builder",
+  description: "Data Science & Analytics Manager turning enterprise insights into scalable digital products. Explore projects, templates, and tools built from real-world data experience.",
+  keywords: ["Data Science", "Analytics", "AI Products", "Machine Learning", "Power BI", "Microsoft Fabric", "Python"],
+  authors: [{ name: "Revino B Akmaldi" }],
   openGraph: {
-    title: "AI Lab - Innovative Solutions for the Future",
-    description: "Building cutting-edge AI solutions and digital products that transform businesses and drive innovation.",
+    title: "Revino B Akmaldi - Data & AI Product Builder",
+    description: "Data Science & Analytics Manager turning enterprise insights into scalable digital products. Explore projects, templates, and tools built from real-world data experience.",
     type: "website",
   },
 };
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <Products />
       <Blog />
       <Contact />
       <Footer />

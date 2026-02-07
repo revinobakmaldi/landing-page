@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Twitter, Linkedin, Mail, ArrowRight, Sparkles } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowRight, Sparkles } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
 
 // Animation variants
@@ -33,9 +33,9 @@ export default function Hero() {
 
   const taglines = [
     personalInfo.tagline,
-    'Building innovative solutions',
-    'AI-Powered Developer',
-    'Creating digital experiences'
+    'Data & AI Product Builder',
+    'From insights to impact',
+    'Building data-driven solutions'
   ];
 
   useEffect(() => {
@@ -150,7 +150,7 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
               </span>
               <span className="text-base font-medium text-zinc-600 dark:text-zinc-400">
-                Welcome to my portfolio
+                Data & AI Product Builder
               </span>
             </motion.div>
 
@@ -217,7 +217,7 @@ export default function Hero() {
                 onClick={(e) => handleNavClick(e, '#contact')}
                 className="inline-flex items-center gap-2 px-8 py-4 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 rounded-full font-semibold text-lg border-2 border-zinc-200 dark:border-zinc-700 hover:border-primary hover:text-primary dark:hover:text-primary transition-all duration-300 hover:scale-105"
               >
-                Get in Touch
+                Hire Me
               </a>
             </motion.div>
 
@@ -237,17 +237,7 @@ export default function Hero() {
                   <Github className="w-5 h-5" />
                 </a>
               )}
-              {personalInfo.socials.twitter && (
-                <a
-                  href={personalInfo.socials.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:text-secondary hover:bg-secondary/10 dark:hover:bg-secondary/20 transition-all duration-300 hover:scale-110"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a>
-              )}
+
               {personalInfo.socials.linkedin && (
                 <a
                   href={personalInfo.socials.linkedin}
@@ -288,7 +278,7 @@ export default function Hero() {
               }}
               className="absolute inset-0 rounded-full"
               style={{
-                background: 'conic-gradient(from 0deg, #7c3aed, #db2777, #0891b2, #7c3aed)',
+                background: 'conic-gradient(from 0deg, #10b981, #3b82f6, #14b8a6, #10b981)',
                 filter: 'blur(40px)',
                 opacity: 0.6
               }}
@@ -305,7 +295,7 @@ export default function Hero() {
               }}
               className="absolute w-[120%] h-[120%] rounded-full"
               style={{
-                background: 'conic-gradient(from 180deg, #7c3aed, #db2777, #0891b2, #7c3aed)',
+                background: 'conic-gradient(from 180deg, #10b981, #3b82f6, #14b8a6, #10b981)',
                 filter: 'blur(30px)',
                 opacity: 0.4
               }}
@@ -317,7 +307,7 @@ export default function Hero() {
               <motion.div
                 className="absolute inset-0 rounded-full"
                 style={{
-                  background: 'linear-gradient(45deg, #7c3aed, #db2777, #0891b2)',
+                  background: 'linear-gradient(45deg, #10b981, #3b82f6, #14b8a6)',
                   padding: '4px',
                   backgroundSize: '200% 200%'
                 }}

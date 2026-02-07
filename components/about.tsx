@@ -145,7 +145,7 @@ export default function About() {
             </h2>
 
             <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              Passionate about building innovative solutions and creating meaningful digital experiences
+              Data professional turned product builder — bridging analytics, AI, and modern web technologies
             </p>
           </motion.div>
 
@@ -184,14 +184,14 @@ export default function About() {
                     </p>
 
                     <p>
-                      I specialize in building modern web applications using cutting-edge technologies.
-                      My passion lies in creating intuitive user experiences and robust backend systems
-                      that scale seamlessly.
+                      With a background in enterprise analytics and an engineering degree from ITS Surabaya,
+                      I bring a systems-thinking approach to every project. I've built data platforms serving
+                      hundreds of stakeholders across supply chain, manufacturing, and commercial functions.
                     </p>
 
                     <p>
-                      When I'm not coding, you'll find me exploring new technologies, contributing to
-                      open-source projects, or sharing knowledge with the developer community.
+                      Now I'm channeling that experience into building digital data products — templates,
+                      tools, and courses that make data accessible to everyone.
                     </p>
                   </div>
 
@@ -202,7 +202,7 @@ export default function About() {
                         whileHover={{ scale: 1.1 }}
                         className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
                       >
-                        5+
+                        7+
                       </motion.div>
                       <div className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Years Exp</div>
                     </div>
@@ -211,7 +211,7 @@ export default function About() {
                         whileHover={{ scale: 1.1 }}
                         className="text-3xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent"
                       >
-                        50+
+                        30+
                       </motion.div>
                       <div className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Projects</div>
                     </div>
@@ -220,9 +220,9 @@ export default function About() {
                         whileHover={{ scale: 1.1 }}
                         className="text-3xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent"
                       >
-                        100%
+                        3
                       </motion.div>
-                      <div className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Dedication</div>
+                      <div className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Industries</div>
                     </div>
                   </div>
                 </div>
@@ -309,8 +309,8 @@ export default function About() {
                       Currently Learning
                     </h4>
                     <p className="text-zinc-600 dark:text-zinc-400 text-sm">
-                      Advanced AI/ML techniques, Web3, and cloud architecture.
-                      Always pushing the boundaries of what's possible!
+                      Microsoft Fabric, LLM-powered analytics, and building
+                      data products at scale.
                     </p>
                   </div>
                 </div>

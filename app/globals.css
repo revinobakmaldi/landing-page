@@ -12,12 +12,12 @@
   --font-mono: var(--font-geist-mono);
 
   /* Custom bold & colorful colors */
-  --color-primary: #7c3aed;
-  --color-primary-dark: #6d28d9;
-  --color-secondary: #db2777;
-  --color-secondary-dark: #be185d;
-  --color-accent: #0891b2;
-  --color-accent-dark: #0e7490;
+  --color-primary: #10b981;
+  --color-primary-dark: #059669;
+  --color-secondary: #3b82f6;
+  --color-secondary-dark: #2563eb;
+  --color-accent: #14b8a6;
+  --color-accent-dark: #0d9488;
 }
 
 @media (prefers-color-scheme: dark) {

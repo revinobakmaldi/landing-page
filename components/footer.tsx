@@ -1,19 +1,19 @@
 'use client';
 
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
 
 const footerLinks = [
   { name: 'Home', href: '#' },
   { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Products', href: '#products' },
   { name: 'Blog', href: '#blog' },
   { name: 'Contact', href: '#contact' },
 ];
 
 const socialLinks = [
   { name: 'GitHub', href: personalInfo.socials.github, icon: Github },
-  { name: 'Twitter', href: personalInfo.socials.twitter, icon: Twitter },
   { name: 'LinkedIn', href: personalInfo.socials.linkedin, icon: Linkedin },
   { name: 'Email', href: `mailto:${personalInfo.socials.email}`, icon: Mail },
 ];
