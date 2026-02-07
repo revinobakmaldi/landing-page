@@ -3,7 +3,7 @@ import { PersonalInfo, Project, BlogPost, DigitalProduct } from "@/types";
 export const personalInfo: PersonalInfo = {
   name: "Revino B Akmaldi",
   tagline: "Turning data into digital products",
-  bio: "Data Science & Analytics Manager turning enterprise insights into scalable digital products. I combine analytics expertise with modern web technologies to build tools that make data accessible to everyone.",
+  bio: "I turn complex data into products people actually use. With 7+ years in analytics and data science, I build dashboards, AI-powered tools, and digital solutions that make data accessible to everyone.",
   avatar: "/avatar.jpg",
   socials: {
     github: "https://github.com/revinobakmaldi",

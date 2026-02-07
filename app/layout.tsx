@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Revino B Akmaldi - Data & AI Product Builder",
-  description: "Data Science & Analytics Manager turning enterprise insights into scalable digital products.",
+  description: "Turning enterprise data into scalable digital products — dashboards, AI tools, and solutions built from real-world experience.",
 };
 
 export default function RootLayout({

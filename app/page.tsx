@@ -10,12 +10,12 @@ import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Revino B Akmaldi - Data & AI Product Builder",
-  description: "Data Science & Analytics Manager turning enterprise insights into scalable digital products. Explore projects, templates, and tools built from real-world data experience.",
+  description: "Turning enterprise data into scalable digital products. Explore projects, templates, and tools built from real-world analytics and data science experience.",
   keywords: ["Data Science", "Analytics", "AI Products", "Machine Learning", "Power BI", "Microsoft Fabric", "Python"],
   authors: [{ name: "Revino B Akmaldi" }],
   openGraph: {
     title: "Revino B Akmaldi - Data & AI Product Builder",
-    description: "Data Science & Analytics Manager turning enterprise insights into scalable digital products. Explore projects, templates, and tools built from real-world data experience.",
+    description: "Turning enterprise data into scalable digital products. Explore projects, templates, and tools built from real-world analytics and data science experience.",
     type: "website",
   },
 };
