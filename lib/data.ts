@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "A hands-on walkthrough of Microsoft Fabric's lakehouse architecture and how it simplifies the modern data stack.",
     date: "2024-11-15",
     slug: "microsoft-fabric-guide",
-    readTime: "6 min read"
+    readTime: "10 min read"
   },
   {
     id: 3,
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Real-world lessons from deploying machine learning models at scale — monitoring, retraining, and avoiding silent failures.",
     date: "2024-10-05",
     slug: "ml-in-production",
-    readTime: "7 min read"
+    readTime: "12 min read"
   }
 ];
 
