@@ -242,9 +242,9 @@ export default function Blog() {
                       className="pt-4 border-t border-zinc-200 dark:border-zinc-800"
                     >
                       <Link
-                        href={post.url || `/blog/${post.slug}`}
-                        target={post.url ? "_blank" : undefined}
-                        rel={post.url ? "noopener noreferrer" : undefined}
+                        href={post.url || `https://blog-rba.vercel.app/${post.slug}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="group/link flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors"
                       >
                         <span>Read More</span>
@@ -269,7 +269,9 @@ export default function Blog() {
             className="text-center pt-8"
           >
             <motion.a
-              href="/blog"
+              href="https://blog-rba.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-secondary via-accent to-primary text-white font-semibold shadow-xl shadow-secondary/25 hover:shadow-2xl hover:shadow-secondary/40 transition-all"
