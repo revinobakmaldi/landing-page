@@ -46,7 +46,7 @@ export const projects: Project[] = [
     title: "Auto EDA",
     description: "Web tool for instant exploratory data analysis — upload a CSV and get comprehensive stats, distributions, correlations, and missing value analysis.",
     tech: ["Next.js", "Python", "Pandas", "Recharts"],
-    demo: "https://auto-eda-revinobakmaldi.vercel.app",
+    demo: "https://auto-eda-csv.vercel.app/",
     github: "https://github.com/revinobakmaldi/auto-eda"
   },
   {
