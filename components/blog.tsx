@@ -3,7 +3,7 @@
 import { useInView } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 import { useRef, useEffect } from 'react';
-import { blogPosts } from '@/lib/data';
+import { BlogPost } from '@/types';
 import { Calendar, Clock, ArrowRight, PenTool } from 'lucide-react';
 import Link from 'next/link';
 
@@ -44,7 +44,7 @@ const formatDate = (dateString: string) => {
   });
 };
 
-export default function Blog() {
+export default function Blog({ posts }: { posts: BlogPost[] }) {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   const controls = useAnimation();
@@ -153,10 +153,7 @@ export default function Blog() {
             variants={staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {[...blogPosts]
-              .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-              .slice(0, 3)
-              .map((post) => (
+            {posts.map((post) => (
               <motion.article
                 key={post.id}
                 variants={cardVariants}

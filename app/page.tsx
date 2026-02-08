@@ -7,6 +7,7 @@ import Products from "@/components/products";
 import Blog from "@/components/blog";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import { getLatestPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Revino B Akmaldi - Data & AI Product Builder",
@@ -20,7 +21,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  const posts = await getLatestPosts();
+
   return (
     <main className="min-h-screen">
       <Navigation />
@@ -28,7 +31,7 @@ export default function Home() {
       <About />
       <Projects />
       <Products />
-      <Blog />
+      <Blog posts={posts} />
       <Contact />
       <Footer />
     </main>
