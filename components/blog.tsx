@@ -153,7 +153,10 @@ export default function Blog() {
             variants={staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {blogPosts.map((post) => (
+            {[...blogPosts]
+              .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+              .slice(0, 3)
+              .map((post) => (
               <motion.article
                 key={post.id}
                 variants={cardVariants}
