@@ -15,10 +15,11 @@ export const personalInfo: PersonalInfo = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Supply Chain Demand Forecasting",
-    description: "ML-powered demand forecasting system that reduced inventory costs by 18% using time-series models and automated retraining pipelines.",
-    tech: ["Python", "Prophet", "FastAPI", "Docker"],
-    github: "https://github.com/revinobakmaldi/demand-forecasting"
+    title: "Chat with Data",
+    description: "Upload a CSV and ask questions in plain English — AI writes SQL, executes it client-side via DuckDB-WASM, and visualizes results with interactive charts.",
+    tech: ["Next.js", "DuckDB-WASM", "Python", "Recharts"],
+    demo: "https://chat-with-data-csv.vercel.app",
+    github: "https://github.com/revinobakmaldi/chat-with-data"
   },
   {
     id: 2,
