@@ -31,10 +31,11 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Claude Limit Notif Scheduler",
-    description: "Automatically starts a 5-hour countdown when you send your first message in Claude Code, then notifies you when your session limit resets. Uses a Claude Code hook with macOS and iPhone push notifications via ntfy.",
-    tech: ["Python", "Claude Code Hooks", "ntfy"],
-    github: "https://github.com/revinobakmaldi/claude-limit-notif-scheduler"
+    title: "Auto EDA",
+    description: "Web tool for instant exploratory data analysis — upload a CSV and get comprehensive stats, distributions, correlations, and missing value analysis.",
+    tech: ["Next.js", "Python", "Pandas", "Recharts"],
+    demo: "https://auto-eda-csv.vercel.app/",
+    github: "https://github.com/revinobakmaldi/auto-eda"
   },
   {
     id: 4,
@@ -45,11 +46,10 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Auto EDA",
-    description: "Web tool for instant exploratory data analysis — upload a CSV and get comprehensive stats, distributions, correlations, and missing value analysis.",
-    tech: ["Next.js", "Python", "Pandas", "Recharts"],
-    demo: "https://auto-eda-csv.vercel.app/",
-    github: "https://github.com/revinobakmaldi/auto-eda"
+    title: "Claude Limit Notif Scheduler",
+    description: "Automatically starts a 5-hour countdown when you send your first message in Claude Code, then notifies you when your session limit resets. Uses a Claude Code hook with macOS and iPhone push notifications via ntfy.",
+    tech: ["Python", "Claude Code Hooks", "ntfy"],
+    github: "https://github.com/revinobakmaldi/claude-limit-notif-scheduler"
   },
   {
     id: 6,
