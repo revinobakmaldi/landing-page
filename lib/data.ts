@@ -30,8 +30,8 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Claude Limit Notif Scheduler",
-    description: "Automated notification system that alerts you when your Claude session limit resets. Runs as a macOS background service with iPhone push notifications via ntfy.",
-    tech: ["Python", "macOS launchd", "GitHub Actions", "ntfy"],
+    description: "Automatically starts a 5-hour countdown when you send your first message in Claude Code, then notifies you when your session limit resets. Uses a Claude Code hook with macOS and iPhone push notifications via ntfy.",
+    tech: ["Python", "Claude Code Hooks", "ntfy"],
     github: "https://github.com/revinobakmaldi/claude-limit-notif-scheduler"
   },
   {
