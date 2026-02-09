@@ -23,9 +23,11 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Executive BI Dashboard Suite",
-    description: "End-to-end Power BI dashboard suite serving 200+ stakeholders with real-time KPIs, drill-through analytics, and automated data refresh.",
-    tech: ["Power BI", "SQL Server", "DAX", "Python"]
+    title: "Chat with PDF",
+    description: "Upload a PDF and ask questions in plain English — AI extracts text client-side via PDF.js and answers with accurate page references.",
+    tech: ["Next.js", "PDF.js", "Python", "OpenRouter"],
+    demo: "https://chat-with-pdf-ai.vercel.app",
+    github: "https://github.com/revinobakmaldi/chat-with-pdf"
   },
   {
     id: 3,
