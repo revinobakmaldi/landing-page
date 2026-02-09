@@ -164,7 +164,7 @@ export default function Projects() {
                 />
 
                 {/* Card */}
-                <div className="relative h-full rounded-3xl bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 shadow-xl overflow-hidden">
+                <div className="relative h-full flex flex-col rounded-3xl bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 shadow-xl overflow-hidden">
                   {/* Project Image/Thumbnail */}
                   <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20">
                     {project.image ? (
@@ -197,7 +197,7 @@ export default function Projects() {
                   </div>
 
                   {/* Card Content */}
-                  <div className="p-6 space-y-4">
+                  <div className="p-6 flex flex-col flex-1 space-y-4">
                     {/* Title */}
                     <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-primary transition-colors">
                       {project.title}
@@ -222,7 +222,7 @@ export default function Projects() {
                     </div>
 
                     {/* Action Links */}
-                    <div className="flex gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                    <div className="flex gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-800 mt-auto">
                       {project.demo && (
                         <motion.a
                           href={project.demo}
