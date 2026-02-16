@@ -39,24 +39,24 @@ export const projects: Project[] = [
   },
   {
     id: 4,
+    title: "ResumeLens",
+    description: "AI-powered resume parser and candidate scorer — upload PDF resumes, extract structured data via LLM, and score candidates against weighted job criteria with hybrid AI + rule-based scoring.",
+    tech: ["Next.js", "Python", "Supabase", "OpenRouter"],
+    github: "https://github.com/revinobakmaldi/resume-lens"
+  },
+  {
+    id: 5,
     title: "IronNotes",
     description: "iOS gym workout tracker with smart set logging, automatic PR detection, 1RM progression charts, and a background rest timer with push notifications.",
     tech: ["SwiftUI", "SwiftData", "Charts", "iOS"],
     github: "https://github.com/revinobakmaldi/iron-notes"
   },
   {
-    id: 5,
+    id: 6,
     title: "Claude Limit Notif Scheduler",
     description: "Automatically starts a 5-hour countdown when you send your first message in Claude Code, then notifies you when your session limit resets. Uses a Claude Code hook with macOS and iPhone push notifications via ntfy.",
     tech: ["Python", "Claude Code Hooks", "ntfy"],
     github: "https://github.com/revinobakmaldi/claude-limit-notif-scheduler"
-  },
-  {
-    id: 6,
-    title: "Sales Analytics Automation Bot",
-    description: "Automated reporting bot that generates weekly sales insights, detects anomalies, and sends Slack summaries to leadership.",
-    tech: ["Python", "Pandas", "Slack API", "Airflow"],
-    github: "https://github.com/revinobakmaldi/sales-analytics-bot"
   }
 ];
 
