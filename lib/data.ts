@@ -42,6 +42,7 @@ export const projects: Project[] = [
     title: "ResumeLens",
     description: "AI-powered resume parser and candidate scorer — upload PDF resumes, extract structured data via LLM, and score candidates against weighted job criteria with hybrid AI + rule-based scoring.",
     tech: ["Next.js", "Python", "Supabase", "OpenRouter"],
+    demo: "https://resume-lens-apps.vercel.app/",
     github: "https://github.com/revinobakmaldi/resume-lens"
   },
   {
