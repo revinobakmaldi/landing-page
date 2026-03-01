@@ -1,13 +1,29 @@
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
-import About from "@/components/about";
-import Projects from "@/components/projects";
-import Products from "@/components/products";
-import Blog from "@/components/blog";
-import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import { getLatestPosts } from "@/lib/blog";
+
+const About = dynamic(() => import("@/components/about"), {
+  loading: () => <section className="min-h-[50vh]" />,
+});
+
+const Projects = dynamic(() => import("@/components/projects"), {
+  loading: () => <section className="min-h-[50vh]" />,
+});
+
+const Products = dynamic(() => import("@/components/products"), {
+  loading: () => <section className="min-h-[50vh]" />,
+});
+
+const Blog = dynamic(() => import("@/components/blog"), {
+  loading: () => <section className="min-h-[50vh]" />,
+});
+
+const Contact = dynamic(() => import("@/components/contact"), {
+  loading: () => <section className="min-h-[50vh]" />,
+});
 
 export const metadata: Metadata = {
   title: "Revino B Akmaldi - Data & AI Product Builder",

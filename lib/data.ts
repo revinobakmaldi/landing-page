@@ -4,7 +4,7 @@ export const personalInfo: PersonalInfo = {
   name: "Revino B Akmaldi",
   tagline: "Turning data into digital products",
   bio: "I turn complex data into products people actually use. With 7+ years in analytics and data science, I build dashboards, AI-powered tools, iOS apps, and digital solutions that make data accessible to everyone.",
-  avatar: "/avatar.jpg",
+  avatar: "/avatar.webp",
   socials: {
     github: "https://github.com/revinobakmaldi",
     linkedin: "https://linkedin.com/in/revinobakmaldi",

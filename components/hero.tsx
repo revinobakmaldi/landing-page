@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowRight, Sparkles } from 'lucide-react';
+import Image from 'next/image';
 import { personalInfo } from '@/lib/data';
 
 // Animation variants
@@ -241,11 +242,13 @@ export default function Hero() {
                 }}
               >
                 <div className="w-full h-full rounded-full bg-zinc-100 dark:bg-zinc-900 p-1">
-                  <div className="w-full h-full rounded-full bg-gradient-to-br from-zinc-200 to-zinc-300 dark:from-zinc-800 dark:to-zinc-900 flex items-center justify-center overflow-hidden">
-                    <img
+                  <div className="relative w-full h-full rounded-full bg-gradient-to-br from-zinc-200 to-zinc-300 dark:from-zinc-800 dark:to-zinc-900 flex items-center justify-center overflow-hidden">
+                    <Image
                       src={personalInfo.avatar}
                       alt={personalInfo.name}
-                      className="w-full h-full object-cover"
+                      fill
+                      priority
+                      className="object-cover"
                     />
                   </div>
                 </div>
