@@ -212,9 +212,9 @@ export default function Hero() {
             variants={scaleIn}
             className="relative flex justify-center items-center"
           >
-            {/* Glowing rings - static on mobile for performance */}
+            {/* Glowing rings - CSS animated for performance */}
             <div
-              className="absolute inset-0 rounded-full"
+              className="absolute inset-0 rounded-full animate-spin-slow"
               style={{
                 background: 'conic-gradient(from 0deg, #10b981, #3b82f6, #14b8a6, #10b981)',
                 filter: 'blur(40px)',
@@ -223,7 +223,7 @@ export default function Hero() {
             />
 
             <div
-              className="absolute w-[120%] h-[120%] rounded-full"
+              className="absolute w-[120%] h-[120%] rounded-full animate-spin-slow-reverse"
               style={{
                 background: 'conic-gradient(from 180deg, #10b981, #3b82f6, #14b8a6, #10b981)',
                 filter: 'blur(30px)',
@@ -235,10 +235,11 @@ export default function Hero() {
             <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               {/* Avatar border */}
               <div
-                className="absolute inset-0 rounded-full"
+                className="absolute inset-0 rounded-full animate-gradient-shift"
                 style={{
                   background: 'linear-gradient(45deg, #10b981, #3b82f6, #14b8a6)',
                   padding: '4px',
+                  backgroundSize: '200% 200%',
                 }}
               >
                 <div className="w-full h-full rounded-full bg-zinc-100 dark:bg-zinc-900 p-1">
