@@ -15,30 +15,6 @@ export const personalInfo: PersonalInfo = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Chat with Data",
-    description: "Upload a CSV and ask questions in plain English — AI writes SQL, executes it client-side via DuckDB-WASM, and visualizes results with interactive charts.",
-    tech: ["Next.js", "DuckDB-WASM", "Python", "Recharts", "OpenRouter"],
-    demo: "https://chat-with-data-csv.vercel.app",
-    github: "https://github.com/revinobakmaldi/chat-with-data"
-  },
-  {
-    id: 2,
-    title: "Chat with PDF",
-    description: "Upload a PDF and ask questions in plain English — AI extracts text client-side via PDF.js and answers with accurate page references.",
-    tech: ["Next.js", "PDF.js", "Python", "OpenRouter"],
-    demo: "https://chat-with-pdf-rba.vercel.app",
-    github: "https://github.com/revinobakmaldi/chat-with-pdf"
-  },
-  {
-    id: 3,
-    title: "Auto EDA",
-    description: "Web tool for instant exploratory data analysis — upload a CSV and get comprehensive stats, distributions, correlations, and missing value analysis.",
-    tech: ["Next.js", "Python", "Pandas", "Recharts"],
-    demo: "https://auto-eda-csv.vercel.app/",
-    github: "https://github.com/revinobakmaldi/auto-eda"
-  },
-  {
-    id: 4,
     title: "ResumeLens",
     description: "AI-powered resume parser and candidate scorer — upload PDF resumes, extract structured data via LLM, and score candidates against weighted job criteria with hybrid AI + rule-based scoring.",
     tech: ["Next.js", "Python", "Supabase", "OpenRouter"],
@@ -46,18 +22,42 @@ export const projects: Project[] = [
     github: "https://github.com/revinobakmaldi/resume-lens"
   },
   {
+    id: 2,
+    title: "SalesPrompter",
+    description: "Next Best Product to Offer engine for distributor salesmen — personalized top 3-5 product recommendations per retailer using hybrid rule-based + ML scoring with AI-powered visit briefings.",
+    tech: ["Next.js", "Python", "Supabase", "OpenRouter"],
+    github: "https://github.com/revinobakmaldi/sales-prompter"
+  },
+  {
+    id: 3,
+    title: "Chat with Data",
+    description: "Upload a CSV and ask questions in plain English — AI writes SQL, executes it client-side via DuckDB-WASM, and visualizes results with interactive charts.",
+    tech: ["Next.js", "DuckDB-WASM", "Python", "Recharts", "OpenRouter"],
+    demo: "https://chat-with-data-csv.vercel.app",
+    github: "https://github.com/revinobakmaldi/chat-with-data"
+  },
+  {
+    id: 4,
+    title: "Chat with PDF",
+    description: "Upload a PDF and ask questions in plain English — AI extracts text client-side via PDF.js and answers with accurate page references.",
+    tech: ["Next.js", "PDF.js", "Python", "OpenRouter"],
+    demo: "https://chat-with-pdf-rba.vercel.app",
+    github: "https://github.com/revinobakmaldi/chat-with-pdf"
+  },
+  {
     id: 5,
+    title: "Auto EDA",
+    description: "Web tool for instant exploratory data analysis — upload a CSV and get comprehensive stats, distributions, correlations, and missing value analysis.",
+    tech: ["Next.js", "Python", "Pandas", "Recharts"],
+    demo: "https://auto-eda-csv.vercel.app/",
+    github: "https://github.com/revinobakmaldi/auto-eda"
+  },
+  {
+    id: 6,
     title: "IronNotes",
     description: "iOS gym workout tracker with smart set logging, automatic PR detection, 1RM progression charts, and a background rest timer with push notifications.",
     tech: ["SwiftUI", "SwiftData", "Charts", "iOS"],
     github: "https://github.com/revinobakmaldi/iron-notes"
-  },
-  {
-    id: 6,
-    title: "Claude Limit Notif Scheduler",
-    description: "Automatically starts a 5-hour countdown when you send your first message in Claude Code, then notifies you when your session limit resets. Uses a Claude Code hook with macOS and iPhone push notifications via ntfy.",
-    tech: ["Python", "Claude Code Hooks", "ntfy"],
-    github: "https://github.com/revinobakmaldi/claude-limit-notif-scheduler"
   }
 ];
 
