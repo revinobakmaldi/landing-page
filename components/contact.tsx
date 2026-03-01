@@ -36,7 +36,7 @@ const socialButtonVariants = {
 
 export default function Contact() {
   const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const controls = useAnimation();
   const [copied, setCopied] = useState(false);
 

@@ -37,7 +37,7 @@ const skillPillVariants = {
 
 export default function About() {
   const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const controls = useAnimation();
 
   useEffect(() => {

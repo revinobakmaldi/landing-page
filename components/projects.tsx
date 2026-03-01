@@ -37,7 +37,7 @@ const cardVariants = {
 
 export default function Projects() {
   const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const controls = useAnimation();
 
   useEffect(() => {

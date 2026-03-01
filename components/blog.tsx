@@ -46,7 +46,7 @@ const formatDate = (dateString: string) => {
 
 export default function Blog({ posts }: { posts: BlogPost[] }) {
   const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const controls = useAnimation();
 
   useEffect(() => {
