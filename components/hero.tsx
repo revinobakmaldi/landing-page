@@ -275,7 +275,7 @@ export default function Hero() {
             delay: 1.5,
             ease: [0.25, 0.4, 0.25, 1] as const
           }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
         >
           <span className="text-sm text-zinc-500 dark:text-zinc-400">Scroll to explore</span>
           <motion.div
