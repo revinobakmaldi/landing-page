@@ -81,54 +81,11 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
-      {/* Animated gradient background */}
+      {/* Static gradient background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Primary gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -100, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute -top-1/2 -right-1/2 w-[800px] h-[800px] bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl"
-        />
-
-        {/* Secondary gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, -100, 0],
-            y: [0, 100, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
-          className="absolute -bottom-1/2 -left-1/2 w-[800px] h-[800px] bg-secondary/20 dark:bg-secondary/10 rounded-full blur-3xl"
-        />
-
-        {/* Accent gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, 50, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{
-            duration: 18,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
-          }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 dark:bg-accent/5 rounded-full blur-3xl"
-        />
+        <div className="absolute -top-1/2 -right-1/2 w-[800px] h-[800px] bg-primary/20 dark:bg-primary/10 rounded-full blur-2xl md:blur-3xl" />
+        <div className="absolute -bottom-1/2 -left-1/2 w-[800px] h-[800px] bg-secondary/20 dark:bg-secondary/10 rounded-full blur-2xl md:blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 dark:bg-accent/5 rounded-full blur-2xl md:blur-3xl" />
       </div>
 
       {/* Grid overlay */}
@@ -160,22 +117,9 @@ export default function Hero() {
               variants={fadeInUp}
               className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight"
             >
-              <motion.span
-                className="inline-block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent"
-                animate={{
-                  backgroundPosition: ['0%', '100%', '0%'],
-                }}
-                transition={{
-                  duration: 5,
-                  repeat: Infinity,
-                  ease: "linear"
-                }}
-                style={{
-                  backgroundSize: '200% auto',
-                }}
-              >
+              <span className="inline-block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 {personalInfo.name}
-              </motion.span>
+              </span>
             </motion.h1>
 
             {/* Animated tagline */}
@@ -267,16 +211,8 @@ export default function Hero() {
             variants={scaleIn}
             className="relative flex justify-center items-center"
           >
-            {/* Glowing rings */}
-            <motion.div
-              animate={{
-                rotate: 360,
-                scale: [1, 1.1, 1],
-              }}
-              transition={{
-                rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-                scale: { duration: 3, repeat: Infinity, ease: "easeInOut" }
-              }}
+            {/* Glowing rings - static on mobile for performance */}
+            <div
               className="absolute inset-0 rounded-full"
               style={{
                 background: 'conic-gradient(from 0deg, #10b981, #3b82f6, #14b8a6, #10b981)',
@@ -285,15 +221,7 @@ export default function Hero() {
               }}
             />
 
-            <motion.div
-              animate={{
-                rotate: -360,
-              }}
-              transition={{
-                duration: 15,
-                repeat: Infinity,
-                ease: "linear"
-              }}
+            <div
               className="absolute w-[120%] h-[120%] rounded-full"
               style={{
                 background: 'conic-gradient(from 180deg, #10b981, #3b82f6, #14b8a6, #10b981)',
@@ -304,25 +232,15 @@ export default function Hero() {
 
             {/* Avatar container */}
             <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-              {/* Animated border */}
-              <motion.div
+              {/* Avatar border */}
+              <div
                 className="absolute inset-0 rounded-full"
                 style={{
                   background: 'linear-gradient(45deg, #10b981, #3b82f6, #14b8a6)',
                   padding: '4px',
-                  backgroundSize: '200% 200%'
-                }}
-                animate={{
-                  backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "linear"
                 }}
               >
                 <div className="w-full h-full rounded-full bg-zinc-100 dark:bg-zinc-900 p-1">
-                  {/* Placeholder avatar - replace with actual image */}
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-zinc-200 to-zinc-300 dark:from-zinc-800 dark:to-zinc-900 flex items-center justify-center overflow-hidden">
                     <img
                       src={personalInfo.avatar}
@@ -331,37 +249,16 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Floating elements */}
-              <motion.div
-                animate={{
-                  y: [0, -20, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-                className="absolute -top-4 -right-4 p-4 rounded-2xl bg-white dark:bg-zinc-800 shadow-xl"
-              >
+              <div className="absolute -top-4 -right-4 p-4 rounded-2xl bg-white dark:bg-zinc-800 shadow-xl">
                 <Sparkles className="w-6 h-6 text-primary" />
-              </motion.div>
+              </div>
 
-              <motion.div
-                animate={{
-                  y: [0, 20, 0],
-                }}
-                transition={{
-                  duration: 5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 1
-                }}
-                className="absolute -bottom-4 -left-4 p-4 rounded-2xl bg-white dark:bg-zinc-800 shadow-xl"
-              >
+              <div className="absolute -bottom-4 -left-4 p-4 rounded-2xl bg-white dark:bg-zinc-800 shadow-xl">
                 <div className="text-2xl">🚀</div>
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         </motion.div>

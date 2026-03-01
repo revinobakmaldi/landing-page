@@ -61,54 +61,11 @@ export default function Blog({ posts }: { posts: BlogPost[] }) {
       id="blog"
       className="relative min-h-screen flex items-center justify-center overflow-hidden py-32"
     >
-      {/* Animated gradient background */}
+      {/* Gradient background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Primary gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -100, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute top-1/4 -left-1/4 w-[600px] h-[600px] bg-primary/10 dark:bg-primary/5 rounded-full blur-3xl"
-        />
-
-        {/* Secondary gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, -100, 0],
-            y: [0, 100, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
-          className="absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] bg-secondary/10 dark:bg-secondary/5 rounded-full blur-3xl"
-        />
-
-        {/* Accent gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, 50, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{
-            duration: 18,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
-          }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/10 dark:bg-accent/5 rounded-full blur-3xl"
-        />
+        <div className="absolute top-1/4 -left-1/4 w-[600px] h-[600px] bg-primary/10 dark:bg-primary/5 rounded-full blur-2xl md:blur-3xl" />
+        <div className="absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] bg-secondary/10 dark:bg-secondary/5 rounded-full blur-2xl md:blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/10 dark:bg-accent/5 rounded-full blur-2xl md:blur-3xl" />
       </div>
 
       {/* Grid overlay */}
@@ -160,17 +117,7 @@ export default function Blog({ posts }: { posts: BlogPost[] }) {
                 className="group relative"
               >
                 {/* Glow effect on hover */}
-                <motion.div
-                  className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-3xl blur opacity-0 group-hover:opacity-30 transition duration-500"
-                  animate={{
-                    scale: [1, 1.05, 1],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-3xl blur opacity-0 group-hover:opacity-30 transition duration-500" />
 
                 {/* Card */}
                 <div className="relative h-full rounded-3xl bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 shadow-xl overflow-hidden">
@@ -178,18 +125,9 @@ export default function Blog({ posts }: { posts: BlogPost[] }) {
                   <div className="relative h-40 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-secondary/40 to-accent/40" />
 
-                    {/* Animated pattern overlay */}
+                    {/* Pattern overlay */}
                     <div className="absolute inset-0 opacity-30">
-                      <motion.div
-                        animate={{
-                          x: [0, 20, 0],
-                          y: [0, -20, 0],
-                        }}
-                        transition={{
-                          duration: 6,
-                          repeat: Infinity,
-                          ease: "easeInOut"
-                        }}
+                      <div
                         className="absolute inset-0"
                         style={{
                           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,

@@ -57,51 +57,11 @@ export default function Products() {
       id="products"
       className="relative min-h-screen flex items-center justify-center overflow-hidden py-32"
     >
-      {/* Animated gradient background */}
+      {/* Gradient background */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -100, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute top-1/4 -right-1/4 w-[600px] h-[600px] bg-primary/10 dark:bg-primary/5 rounded-full blur-3xl"
-        />
-
-        <motion.div
-          animate={{
-            x: [0, -100, 0],
-            y: [0, 100, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
-          className="absolute bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-secondary/10 dark:bg-secondary/5 rounded-full blur-3xl"
-        />
-
-        <motion.div
-          animate={{
-            x: [0, 50, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{
-            duration: 18,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
-          }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/10 dark:bg-accent/5 rounded-full blur-3xl"
-        />
+        <div className="absolute top-1/4 -right-1/4 w-[600px] h-[600px] bg-primary/10 dark:bg-primary/5 rounded-full blur-2xl md:blur-3xl" />
+        <div className="absolute bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-secondary/10 dark:bg-secondary/5 rounded-full blur-2xl md:blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/10 dark:bg-accent/5 rounded-full blur-2xl md:blur-3xl" />
       </div>
 
       {/* Grid overlay */}
@@ -155,17 +115,7 @@ export default function Products() {
                   className="group relative"
                 >
                   {/* Glow effect on hover */}
-                  <motion.div
-                    className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-3xl blur opacity-0 group-hover:opacity-30 transition duration-500"
-                    animate={{
-                      scale: [1, 1.05, 1],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  />
+                  <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-3xl blur opacity-0 group-hover:opacity-30 transition duration-500" />
 
                   {/* Card */}
                   <div className="relative h-full rounded-3xl bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 shadow-xl overflow-hidden">
@@ -173,19 +123,9 @@ export default function Products() {
                     <div className="p-8 pb-4 space-y-4">
                       {/* Icon + Badge */}
                       <div className="flex items-start justify-between">
-                        <motion.div
-                          animate={{
-                            rotate: [0, 5, -5, 0],
-                          }}
-                          transition={{
-                            duration: 4,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                          }}
-                          className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/25"
-                        >
+                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/25">
                           <Icon className="w-8 h-8 text-white" />
-                        </motion.div>
+                        </div>
 
                         {product.comingSoon && (
                           <span className="px-3 py-1 text-xs font-semibold rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 text-primary border border-primary/20">

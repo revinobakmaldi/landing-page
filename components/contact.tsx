@@ -91,54 +91,11 @@ export default function Contact() {
       id="contact"
       className="relative min-h-screen flex items-center justify-center overflow-hidden py-32"
     >
-      {/* Animated gradient background */}
+      {/* Gradient background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Primary gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -100, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute top-1/4 -left-1/4 w-[600px] h-[600px] bg-primary/10 dark:bg-primary/5 rounded-full blur-3xl"
-        />
-
-        {/* Secondary gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, -100, 0],
-            y: [0, 100, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
-          className="absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] bg-secondary/10 dark:bg-secondary/5 rounded-full blur-3xl"
-        />
-
-        {/* Accent gradient blob */}
-        <motion.div
-          animate={{
-            x: [0, 50, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{
-            duration: 18,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
-          }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/10 dark:bg-accent/5 rounded-full blur-3xl"
-        />
+        <div className="absolute top-1/4 -left-1/4 w-[600px] h-[600px] bg-primary/10 dark:bg-primary/5 rounded-full blur-2xl md:blur-3xl" />
+        <div className="absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] bg-secondary/10 dark:bg-secondary/5 rounded-full blur-2xl md:blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/10 dark:bg-accent/5 rounded-full blur-2xl md:blur-3xl" />
       </div>
 
       {/* Grid overlay */}
@@ -196,17 +153,7 @@ export default function Contact() {
                     className="group relative"
                   >
                     {/* Glow effect on hover */}
-                    <motion.div
-                      className={`absolute -inset-1 bg-gradient-to-r ${social.hoverGradient} rounded-3xl blur opacity-0 group-hover:opacity-40 transition duration-500`}
-                      animate={{
-                        scale: [1, 1.05, 1],
-                      }}
-                      transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
-                    />
+                    <div className={`absolute -inset-1 bg-gradient-to-r ${social.hoverGradient} rounded-3xl blur opacity-0 group-hover:opacity-40 transition duration-500`} />
 
                     {/* Button */}
                     <div className="relative h-full rounded-3xl bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-900 border border-zinc-200 dark:border-zinc-700 shadow-xl overflow-hidden">
@@ -216,23 +163,15 @@ export default function Contact() {
                       {/* Content */}
                       <div className="relative p-8 flex flex-col items-center justify-center gap-4">
                         {/* Icon container */}
-                        <motion.div
+                        <div
                           className={`
                             p-5 rounded-2xl bg-gradient-to-br ${social.gradient}
                             text-white shadow-lg ${social.shadowColor}
                             group-hover:scale-110 transition-transform duration-300
                           `}
-                          animate={{
-                            rotate: [0, 5, -5, 0],
-                          }}
-                          transition={{
-                            duration: 4,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                          }}
                         >
                           <Icon className="w-8 h-8" />
-                        </motion.div>
+                        </div>
 
                         {/* Social name */}
                         <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-white transition-colors">
@@ -258,19 +197,9 @@ export default function Contact() {
           >
             <div className="relative p-8 rounded-3xl bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 shadow-xl">
               {/* Decorative icon */}
-              <motion.div
-                animate={{
-                  rotate: [0, 10, -10, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-                className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/25"
-              >
+              <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/25">
                 <Mail className="w-6 h-6 text-white" />
-              </motion.div>
+              </div>
 
               <div className="pt-6 text-center space-y-6">
                 <div>
@@ -297,17 +226,7 @@ export default function Contact() {
                   `}
                 >
                   {/* Background glow */}
-                  <motion.div
-                    className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    animate={{
-                      scale: [1, 1.02, 1],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                   {/* Content */}
                   <div className="relative flex items-center gap-3">
@@ -338,19 +257,9 @@ export default function Contact() {
             variants={fadeInUp}
             className="text-center pt-8"
           >
-            <motion.p
-              className="text-lg text-zinc-600 dark:text-zinc-400"
-              animate={{
-                opacity: [0.6, 1, 0.6],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              Thanks for stopping by! Let's build something amazing together.
-            </motion.p>
+            <p className="text-lg text-zinc-600 dark:text-zinc-400">
+              Thanks for stopping by! Let&apos;s build something amazing together.
+            </p>
           </motion.div>
         </motion.div>
       </div>
